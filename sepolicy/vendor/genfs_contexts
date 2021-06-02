@@ -66,3 +66,6 @@ genfscon sysfs /devices/virtual/misc/msm_qcelp/wakeup                           
 genfscon sysfs /devices/virtual/misc/msm_wma/wakeup                                                                                                                                                                            u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_wmapro/wakeup                                                                                                                                                                         u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/wakeup/wakeup                                                                                                                                                                                  u:object_r:sysfs_wakeup:s0
+
+# Touchpanel
+genfscon sysfs /devices/virtual/touch/touch_dev/        u:object_r:sysfs_touchpanel:s0
