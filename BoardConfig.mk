@@ -103,11 +103,12 @@ BOARD_KERNEL_CMDLINE += buildvariant=user
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
-TARGET_KERNEL_CLANG_VERSION := r498229b
 TARGET_KERNEL_CONFIG := vendor/laurel_sprout-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/laurel_sprout
-TARGET_KERNEL_ADDITIONAL_FLAGS := \
-    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+
+TARGET_KERNEL_NO_LLVM_BINUTILS := true
+TARGET_KERNEL_CLANG_PATH := /home/alee/proton-clang
+KERNEL_LD := LD=ld.lld
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
