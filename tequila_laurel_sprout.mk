@@ -14,11 +14,14 @@ $(call inherit-product, device/xiaomi/laurel_sprout/device.mk)
 # Inherit some common Tequila stuff.
 $(call inherit-product, vendor/tequila/config/common_full_phone.mk)
 
-PRODUCT_NO_CAMERA := true
-TARGET_SUPPORTS_QUICK_TAP := true
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 720
+
+# Tequila props
+TARGET_HAS_UDFPS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 PRODUCT_DEVICE := laurel_sprout
 PRODUCT_NAME := tequila_laurel_sprout
