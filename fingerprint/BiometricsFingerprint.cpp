@@ -42,6 +42,16 @@
 #define FOD_STATUS_ON 1
 #define FOD_STATUS_OFF 0
 
+namespace {
+
+template <typename T>
+static void set(const std::string& path, const T& value) {
+    std::ofstream file(path);
+    file << value;
+}
+
+} // anonymous namespace
+
 namespace android {
 namespace hardware {
 namespace biometrics {
