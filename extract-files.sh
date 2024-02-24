@@ -57,6 +57,10 @@ function blob_fixup() {
         vendor/lib/miwatermark.so)
             "${PATCHELF}" --add-needed "libwatermark_shim.so" "${2}"
             ;;
+        vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so|vendor/lib64/hw/fingerprint.goodix_fod.default.so|vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so|vendor/lib64/vendor.qti.hardware.fingerprintext@1.0.so)
+            "${PATCHELF}" --remove-needed "libhidlbase.so" "${2}"
+            sed -i "s/libhidltransport.so/libhidlbase-v32.so\x00/" "${2}"
+            ;;
     esac
 }
 
