@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Flag to enable framework dimming for udfps -->
+    <bool name="config_udfpsFrameworkDimming">true</bool>
+
+    <!-- Array of brightness-alpha lut for framework dimming -->
+    <string-array name="config_udfpsDimmingBrightnessAlphaArray" translatable="false">
+        <item>0,255</item>
+        <item>1,224</item>
+        <item>2,214</item>
+        <item>3,213</item>
+        <item>4,207</item>
+        <item>5,203</item>
+        <item>6,201</item>
+        <item>8,197</item>
+        <item>10,177</item>
+        <item>15,161</item>
+        <item>20,139</item>
+        <item>30,139</item>
+        <item>45,103</item>
+        <item>70,84</item>
+        <item>100,41</item>
+        <item>120,72</item>
+        <item>140,55</item>
+        <item>160,39</item>
+        <item>180,44</item>
+        <item>200,31</item>
+        <item>220,19</item>
+        <item>240,46</item>
+        <item>260,37</item>
+    </string-array>
+</resources>
