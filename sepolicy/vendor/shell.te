@@ -1,0 +1,3 @@
+allow shell vendor_toolbox_exec:file { getattr };
+allow shell vendor_toolbox_exec:file { execute };
+allow shell self:capability { dac_override };
