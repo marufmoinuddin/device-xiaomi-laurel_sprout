@@ -107,7 +107,7 @@ TARGET_KERNEL_CONFIG := vendor/laurel_sprout-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/laurel_sprout
 
 TARGET_KERNEL_NO_LLVM_BINUTILS := true
-TARGET_KERNEL_CLANG_PATH := /home/alee/proton-clang
+TARGET_KERNEL_CLANG_PATH := ~/toolchains/neutron-clang
 KERNEL_LD := LD=ld.lld
 
 BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
