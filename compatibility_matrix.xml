@@ -20,7 +20,6 @@
         <fqname>ISecureElement/SIM1</fqname>
         <fqname>ISecureElement/SIM2</fqname>
         <fqname>ISecureElement/SIM3</fqname>
-        <fqname>ISecureElement/eSE1</fqname>
     </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.radio.data</name>
