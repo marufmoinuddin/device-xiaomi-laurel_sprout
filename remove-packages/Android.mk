@@ -5,14 +5,27 @@ LOCAL_MODULE := RemovePackages
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
+    Aperture \
+    CalculatorGooglePrebuilt \
     CalendarGooglePrebuilt \
+    Camera2 \
+    Chrome-Stub \
     DevicePolicyPrebuilt \
     GoogleContacts \
     GoogleTTS \
+    LatinIMEGooglePrebuilt \
     Maps \
     Photos \
+    PixelThemesStub \
+    PixelThemesStub2022_and_newer \
     PrebuiltGmail \
-    talkback
+    Snap \
+    Snap2 \
+    talkback \
+    Velvet \
+    YouTube \
+    YouTubeMusicPrebuilt \
+    YTMusic
 
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
