@@ -146,6 +146,7 @@ vendor/lib/libvideoutils.so
 vendor/lib/libvidhance.so
 vendor/lib/mibokeh_660_opencl.bin
 vendor/lib/miwatermark.so
+system/lib/libpiex.so:vendor/lib/libpiex.so
 vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2vop.so
 vendor/lib64/libseemore.so
@@ -154,6 +155,7 @@ vendor/lib64/libsns_fastRPC_util.so
 vendor/lib64/libsns_low_lat_stream_stub.so
 vendor/lib64/libsnsapi.so
 vendor/lib64/libsnsdiaglog.so
+system/lib64/libpiex.so:vendor/lib64/libpiex.so
 
 # Camera-Actuator
 vendor/lib/libactuator_ad5816g.so
