@@ -13,7 +13,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     DevicePolicyPrebuilt \
     GoogleContacts \
     GoogleTTS \
-    LatinIMEGooglePrebuilt \
     Maps \
     Photos \
     PixelThemesStub \
