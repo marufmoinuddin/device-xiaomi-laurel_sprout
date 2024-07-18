@@ -178,7 +178,7 @@
     },
     {
       "Name": "DoubleTapToWake",
-      "Path": "/sys/devices/virtual/touch/touch_dev/double_tap",
+      "Path": "/dev/input/event2",
       "Values": [
         "0",
         "1"
