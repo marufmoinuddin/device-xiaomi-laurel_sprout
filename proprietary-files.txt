@@ -84,6 +84,22 @@ vendor/lib/libsndmonitor.so
 vendor/lib/libspkrprot.so
 vendor/lib/libssrec.so
 vendor/lib/libsurround_3mic_proc.so
+vendor/lib/libstagefright_soft_vpxdec.so
+vendor/lib/libstagefright_soft_mpeg4enc.so
+vendor/lib/libstagefright_soft_rawdec.so
+vendor/lib/libstagefright_soft_gsmdec.so
+vendor/lib/libstagefright_soft_hevcdec.so
+vendor/lib/libstagefright_soft_flacdec.so
+vendor/lib/libstagefright_soft_amrwbenc.so
+vendor/lib/libstagefright_soft_avcdec.so
+vendor/lib/libstagefright_soft_aacdec.so
+vendor/lib/libstagefright_soft_amrnbenc.so
+vendor/lib/libstagefright_soft_opusdec.so
+vendor/lib/libstagefright_soft_aacenc.so
+vendor/lib/libstagefright_soft_avcenc.so
+vendor/lib/libstagefright_soft_amrdec.so
+vendor/lib/libstagefright_soft_vorbisdec.so
+vendor/lib/libstagefright_soft_g711dec.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
@@ -156,6 +172,8 @@ vendor/lib64/libsns_low_lat_stream_stub.so
 vendor/lib64/libsnsapi.so
 vendor/lib64/libsnsdiaglog.so
 system/lib64/libpiex.so:vendor/lib64/libpiex.so
+system/apex/com.android.media.swcodec/lib64/libvpx.so:vendor/lib64/libvpx.so
+vendor/lib/libvpx.so
 
 # Camera-Actuator
 vendor/lib/libactuator_ad5816g.so
