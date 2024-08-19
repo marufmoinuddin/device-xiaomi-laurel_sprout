@@ -61,6 +61,13 @@ vendor/lib/libaudio_log_utils.so
 vendor/lib64/hw/sound_trigger.primary.trinket.so
 
 # Audio Libraries
+system/apex/com.android.media.swcodec/lib64/libstagefright_amrnb_common.so:vendor/lib64/libstagefright_amrnb_common.so
+system/apex/com.android.media.swcodec/lib64/libstagefright_enc_common.so:vendor/lib64/libstagefright_enc_common.so
+system/apex/com.android.media.swcodec/lib64/libstagefright_flacdec.so:vendor/lib64/libstagefright_flacdec.so
+system/lib/libstagefright_amrnb_common.so
+system/lib/libstagefright_flacdec.so
+system/lib64/libstagefright_amrnb_common.so
+system/lib64/libstagefright_flacdec.so
 vendor/lib/liba2dpoffload.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
@@ -83,6 +90,9 @@ vendor/lib/libqtigef.so
 vendor/lib/libsndmonitor.so
 vendor/lib/libspkrprot.so
 vendor/lib/libssrec.so
+vendor/lib/libstagefright_amrnb_common.so
+vendor/lib/libstagefright_enc_common.so
+vendor/lib/libstagefright_flacdec.so
 vendor/lib/libstagefright_soft_aacdec.so
 vendor/lib/libstagefright_soft_aacenc.so
 vendor/lib/libstagefright_soft_amrdec.so
@@ -91,14 +101,18 @@ vendor/lib/libstagefright_soft_amrwbenc.so
 vendor/lib/libstagefright_soft_avcdec.so
 vendor/lib/libstagefright_soft_avcenc.so
 vendor/lib/libstagefright_soft_flacdec.so
+vendor/lib/libstagefright_soft_flacenc.so
 vendor/lib/libstagefright_soft_g711dec.so
 vendor/lib/libstagefright_soft_gsmdec.so
 vendor/lib/libstagefright_soft_hevcdec.so
+vendor/lib/libstagefright_soft_mp3dec.so
+vendor/lib/libstagefright_soft_mpeg4dec.so
 vendor/lib/libstagefright_soft_mpeg4enc.so
 vendor/lib/libstagefright_soft_opusdec.so
 vendor/lib/libstagefright_soft_rawdec.so
 vendor/lib/libstagefright_soft_vorbisdec.so
 vendor/lib/libstagefright_soft_vpxdec.so
+vendor/lib/libstagefright_soft_vpxenc.so
 vendor/lib/libsurround_3mic_proc.so
 
 # Bluetooth
@@ -1557,6 +1571,7 @@ vendor/lib/libFileMux_proprietary.so
 vendor/lib/libmmosal.so
 vendor/lib/libmmrtpdecoder_proprietary.so
 vendor/lib/libmmrtpencoder_proprietary.so
+vendor/lib/libvorbisidec.so
 vendor/lib64/libmmosal.so
 
 # Media configs
@@ -1639,6 +1654,10 @@ vendor/lib64/libswvdec.so
 vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
+
+# Power
+system_ext/lib/libqti_performance.so
+system_ext/lib64/libqti_performance.so:vendor/lib64/libqti_performance.so
 
 # Power-off Alarm
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
