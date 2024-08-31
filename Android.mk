@@ -11,11 +11,14 @@ include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 include $(CLEAR_VARS)
 
-$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr: $(wildcard $(PRODUCT_VENDOR_KERNEL_HEADERS)/*)
+# Sometimes PRODUCT_VENDOR_KERNEL_HEADERS is not set.
+# In that case, we will use the kernel headers from the device tree.
+KERNEL_HEADERS := $(if $(strip $(PRODUCT_VENDOR_KERNEL_HEADERS)),$(PRODUCT_VENDOR_KERNEL_HEADERS),$(KERNEL_PATH)/kernel-headers/include)
+$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr: $(wildcard $(KERNEL_HEADERS)/*)
 	rm -rf $@
 	mkdir -p $@/include
-	cp -a $(PRODUCT_VENDOR_KERNEL_HEADERS)/. $@/include
-include
+	cp -a $(KERNEL_HEADERS)/. $@/include
+
 
 # A/B builds require us to create the mount points at compile time.
 # Just creating it for all cases since it does not hurt.
