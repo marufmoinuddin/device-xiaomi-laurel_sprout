@@ -11,15 +11,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from laurel_sprout device
 $(call inherit-product, device/xiaomi/laurel_sprout/device.mk)
 
-# Inherit some common halcyon stuff.
-$(call inherit-product, vendor/halcyon/config/common.mk)
+# Inherit some common lmodroid stuff.
+$(call inherit-product, vendor/lmodroid/config/common.mk)
 
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 720
 
 PRODUCT_DEVICE := laurel_sprout
-PRODUCT_NAME :=  halcyon_laurel_sprout
+PRODUCT_NAME :=  lmodroid_laurel_sprout
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A3
 PRODUCT_MANUFACTURER := Xiaomi
